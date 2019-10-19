@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sitios:</strong>
+  <%= @recorrido.sitios %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @recorrido.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_recorrido_path(@recorrido) %> |
+<%= link_to 'Back', recorridos_path %>

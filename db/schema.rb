@@ -10,12 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_19_223548) do
+ActiveRecord::Schema.define(version: 2019_10_19_223601) do
 
   create_table "gastronomia", force: :cascade do |t|
     t.string "plato"
     t.text "descripcion"
     t.string "imagen"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "recorridos", force: :cascade do |t|
+    t.string "sitios"
+    t.text "descripcion"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "routes", force: :cascade do |t|
+    t.string "nombre"
+    t.text "descripcion"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

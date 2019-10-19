@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :recorridos
+  resources :routes
   resources :gastronomia
   devise_for :users
   root to: 'home#index'
