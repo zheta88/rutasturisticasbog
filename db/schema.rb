@@ -10,9 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+ActiveRecord::Schema.define(version: 2019_10_19_223601) do
+  create_table "recorridos", force: :cascade do |t|
+    t.string "sitios"
+    t.text "descripcion"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 ActiveRecord::Schema.define(version: 2019_10_19_221224) do
-
   create_table "routes", force: :cascade do |t|
     t.string "nombre"
     t.text "descripcion"

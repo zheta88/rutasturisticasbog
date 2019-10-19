@@ -1,0 +1,27 @@
+<%= form_with(model: recorrido, local: true) do |form| %>
+  <% if recorrido.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(recorrido.errors.count, "error") %> prohibited this recorrido from being saved:</h2>
+
+      <ul>
+        <% recorrido.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :sitios %>
+    <%= form.text_field :sitios %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_area :descripcion %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
