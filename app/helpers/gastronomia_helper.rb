@@ -1,0 +1,2 @@
+module GastronomiaHelper
+end
