@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Plato:</strong>
+  <%= @gastronomium.plato %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @gastronomium.descripcion %>
+</p>
+
+<p>
+  <strong>Imagen:</strong>
+  <%= @gastronomium.imagen %>
+</p>
+
+<%= link_to 'Edit', edit_gastronomium_path(@gastronomium) %> |
+<%= link_to 'Back', gastronomia_path %>

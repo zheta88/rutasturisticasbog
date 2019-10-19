@@ -1,0 +1,2 @@
+class Gastronomium < ApplicationRecord
+end

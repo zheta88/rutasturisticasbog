@@ -1,0 +1,32 @@
+<%= form_with(model: gastronomium, local: true) do |form| %>
+  <% if gastronomium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gastronomium.errors.count, "error") %> prohibited this gastronomium from being saved:</h2>
+
+      <ul>
+        <% gastronomium.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :plato %>
+    <%= form.text_field :plato %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_area :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :imagen %>
+    <%= form.text_field :imagen %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
