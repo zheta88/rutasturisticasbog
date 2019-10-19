@@ -10,6 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
+ActiveRecord::Schema.define(version: 2019_10_19_221224) do
+
+  create_table "routes", force: :cascade do |t|
+    t.string "nombre"
+    t.text "descripcion"
 ActiveRecord::Schema.define(version: 2019_10_19_223548) do
 
   create_table "gastronomia", force: :cascade do |t|
@@ -31,5 +37,4 @@ ActiveRecord::Schema.define(version: 2019_10_19_223548) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
-
 end
