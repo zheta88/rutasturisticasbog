@@ -17,6 +17,7 @@ class RoutesController < ApplicationController
     @route = Route.new
   end
 
+
   # GET /routes/1/edit
   def edit
   end
